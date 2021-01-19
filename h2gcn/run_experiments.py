@@ -6,7 +6,7 @@ tf.config.experimental_run_functions_eagerly(True)
 
 parser = arguments.create_parser()
 parser.add_argument("--debug", action="store_true", help="Debug in VS Code")
-parser.add_argument("--random_seed", type=int, default=123)
+parser.add_argument("--random_seed", type=int, default=42)
 parser.add_argument("--use_full_gpu", action="store_true", dest="_use_full_gpu")
 parser.add_argument("--interactive", "-i", action="store_true", dest="_interactive")
 known_args, _ = parser.parse_known_args()

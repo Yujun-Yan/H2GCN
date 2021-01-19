@@ -1,0 +1,20 @@
+{
+    "model_args": [
+        "H2GCN --network_setup M64-R-T1-G-V-C1-D0.5-MO --adj_nhood 1 2 --l2_regularize_weight 1e-5",
+        "H2GCN --network_setup M64-R-T1-G-V-T2-G-V-C1-C2-D0.5-MO --adj_nhood 1 2 --l2_regularize_weight 1e-5",
+	"H2GCN --network_setup M64-R-T1-G-V-T2-G-V-T3-G-V-T4-G-V-C1-C2-C3-C4-D0.5-MO --adj_nhood 1 2 --l2_regularize_weight 1e-5",
+	"H2GCN --network_setup M64-R-T1-G-V-T2-G-V-T3-G-V-T4-G-V-T5-G-V-T6-G-V-T7-G-V-T8-G-V-C1-C2-C3-C4-C5-C6-C7-C8-D0.5-MO --adj_nhood 1 2 --l2_regularize_weight 1e-5",
+	"H2GCN --network_setup M64-R-T1-G-V-T2-G-V-T3-G-V-T4-G-V-T5-G-V-T6-G-V-T7-G-V-T8-G-V-T9-G-V-T10-G-V-T11-G-V-T12-G-V-T13-G-V-T14-G-V-T15-G-V-T16-G-V-C1-C2-C3-C4-C5-C6-C7-C8-C9-C10-C11-C12-C13-C14-C15-C16-D0.5-MO --adj_nhood 1 2 --l2_regularize_weight 1e-5",
+	"H2GCN --network_setup M64-R-T1-G-V-T2-G-V-T3-G-V-T4-G-V-T5-G-V-T6-G-V-T7-G-V-T8-G-V-T9-G-V-T10-G-V-T11-G-V-T12-G-V-T13-G-V-T14-G-V-T15-G-V-T16-G-V-T17-G-V-T18-G-V-T19-G-V-T20-G-V-T21-G-V-T22-G-V-T23-G-V-T24-G-V-T25-G-V-T26-G-V-T27-G-V-T28-G-V-T29-G-V-T30-G-V-T31-G-V-T32-G-V-C1-C2-C3-C4-C5-C6-C7-C8-C9-C10-C11-C12-C13-C14-C15-C16-C17-C18-C19-C20-C21-C22-C23-C24-C25-C26-C27-C28-C29-C30-C31-C32-D0.5-MO --adj_nhood 1 2 --l2_regularize_weight 1e-5",
+	"H2GCN --network_setup M64-R-T1-G-V-T2-G-V-T3-G-V-T4-G-V-T5-G-V-T6-G-V-T7-G-V-T8-G-V-T9-G-V-T10-G-V-T11-G-V-T12-G-V-T13-G-V-T14-G-V-T15-G-V-T16-G-V-T17-G-V-T18-G-V-T19-G-V-T20-G-V-T21-G-V-T22-G-V-T23-G-V-T24-G-V-T25-G-V-T26-G-V-T27-G-V-T28-G-V-T29-G-V-T30-G-V-T31-G-V-T32-G-V-T33-G-V-T34-G-V-T35-G-V-T36-G-V-T37-G-V-T38-G-V-T39-G-V-T40-G-V-T41-G-V-T42-G-V-T43-G-V-T44-G-V-T45-G-V-T46-G-V-T47-G-V-T48-G-V-T49-G-V-T50-G-V-T51-G-V-T52-G-V-T53-G-V-T54-G-V-T55-G-V-T56-G-V-T57-G-V-T58-G-V-T59-G-V-T60-G-V-T61-G-V-T62-G-V-T63-G-V-T64-G-V-C1-C2-C3-C4-C5-C6-C7-C8-C9-C10-C11-C12-C13-C14-C15-C16-C17-C18-C19-C20-C21-C22-C23-C24-C25-C26-C27-C28-C29-C30-C31-C32-C33-C34-C35-C36-C37-C38-C39-C40-C41-C42-C43-C44-C45-C46-C47-C48-C49-C50-C51-C52-C53-C54-C55-C56-C57-C58-C59-C60-C61-C62-C63-C64-D0.5-MO --adj_nhood 1 2 --l2_regularize_weight 1e-5"
+    ],
+    "exp_regex": "unmodified-0\\.48p__0\\.2p",
+    "arg_regex": "",
+    
+    "graph_filter_dict": {
+        "benchmark": true,
+        "$or": [
+            {"method.$in": ["planetoid", "GeomGCN"]}
+        ]
+    }
+}

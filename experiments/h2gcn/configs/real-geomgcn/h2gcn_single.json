@@ -1,0 +1,14 @@
+{
+    "model_args": [
+        "H2GCN --network_setup M64-R-T1-G-V-C1-D0.5-MO --adj_nhood 1 2 --l2_regularize_weight 1e-5"
+    ],
+    "exp_regex": "film.*unmodified-0\\.48p__0\\.2p",
+    "arg_regex": "",
+    
+    "graph_filter_dict": {
+        "benchmark": true,
+        "$or": [
+            {"method.$in": ["planetoid", "GeomGCN"]}
+        ]
+    }
+}
